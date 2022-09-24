@@ -4,22 +4,22 @@
     <title>Library Management System</title>
     <link rel="stylesheet" type="text/css" href="CSS/searchBookStyle.css" />
   </head>
-  <body background="Images/BUP_Lake.jpg">
+  <body background="Images/bup_logowala.jpg">
     <center>
       <div class="topnav">
         <a id="inActive" href="addBook.html">Add Books</a>
-        <a class="active" href="searchBook.html">Books Search</a>
-        <a id="inActive" href="updateBook.html">Book Update</a>
+        <a id="inActive" href="searchBook.html">Books Search</a>
+        <a class="active" href="updateBook.html">Book Update</a>
         <a id="inActive" href="borrower.html">Issue Book</a>
         <a id="inActive" href="bookSubmission.html">Book Submission</a>
         <a id="inActive" href="bookList.html">Book List</a>
         <a id="inActive" href="studRecord.html">Student Record</a>
-        <a href="Logout.html" id="logout">Logout</a>
+        <a href="Logout.php" id="logout">Logout</a>
       </div>
       <div id="bottomLayout">
         <br />
-        <center><h2 id="formHeading">Search Books</h2></center>
-        <form id="searchForm">
+        <center><h2 id="formHeading">Book Update</h2></center>
+        <form action="updateBook.php" id="searchForm" method="POST">
           <table id="formLayout" cellspacing="10">
             <tr id="rowLayout">
               <td id="rowHeading">Book Id:</td>
@@ -27,7 +27,7 @@
             </tr>
           </table>
           <br />
-          <center><input type="submit" value="Search" /></center>
+          <center><input type="submit" value="Search" id="update" /></center>
           <br />
         </form>
       </div>

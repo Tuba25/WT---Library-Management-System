@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" type="text/css" href="CSS/searchBookStyle.css" />
+  </head>
+  <body background="Images/bup_logowala.jpg">
+    <center>
+      <div class="topnav">
+        <a id="inActive" href="addBook.html">Add Books</a>
+        <a id="inActive" href="searchBook.html">Books Search</a>
+        <a id="inActive" href="updateBook.html">Book Update</a>
+        <a class="active" href="borrower.html">Issue Book</a>
+        <a id="inActive" href="bookSubmission.html">Book Submission</a>
+        <a id="inActive" href="bookList.html">Book List</a>
+        <a id="inActive" href="studRecord.html">Student Record</a>
+        <a href="Logout.php" id="logout">Logout</a>
+      </div>
+      <div id="bottomLayout">
+        <br />
+        <center><h2 id="formHeading">Issue Book</h2></center>
+        <br />
+        <form action="borrower.php" method="POST">
+          <table id="formLayout" cellspacing="10">
+            <tr id="rowLayout">
+              <td id="rowHeading">Student Username :</td>
+              <td><input type="text" name="studUsername" id="input" /></td>
+            </tr>
+            <tr id="rowLayout">
+              <td id="rowHeading">BookId :</td>
+              <td><input type="text" name="bookId" id="input" /></td>
+            </tr>
+            <tr id="rowLayout">
+              <td id="rowHeading">Issue Date :</td>
+              <td><input type="text" name="issueDate" id="input" /></td>
+            </tr>
+            <tr id="rowLayout">
+              <td id="rowHeading">Return Date :</td>
+              <td><input type="text" name="returnDate" id="input" /></td>
+            </tr>
+          </table>
+          <br />
+          <center><input type="submit" value="Submit" /></center>
+          <br />
+        </form>
+        <br />
+      </div>
+    </center>
+  </body>
+</html>
