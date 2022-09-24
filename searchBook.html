@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" type="text/css" href="CSS/searchBookStyle.css" />
+  </head>
+  <body background="Images/BUP_Lake.jpg">
+    <center>
+      <div class="topnav">
+        <a id="inActive" href="addBook.php">Add Books</a>
+        <a class="active" href="searchBook.php">Books Search</a>
+        <a id="inActive" href="updateBook.php">Book Update</a>
+        <a id="inActive" href="borrower.php">Issue Book</a>
+        <a id="inActive" href="bookSubmission.php">Book Submission</a>
+        <a id="inActive" href="bookList.php">Book List</a>
+        <a id="inActive" href="studRecord.php">Student Record</a>
+        <a href="Logout.html" id="logout">Logout</a>
+      </div>
+      <div id="bottomLayout">
+        <br />
+        <center><h2 id="formHeading">Search Books</h2></center>
+        <form action="searchBook.html" id="searchForm" method="POST">
+          <table id="formLayout" cellspacing="10">
+            <tr id="rowLayout">
+              <td id="rowHeading">Book Id:</td>
+              <td><input type="text" name="bookId" id="input" /></td>
+            </tr>
+          </table>
+          <br />
+          <center><input type="submit" value="Search" /></center>
+          <br />
+        </form>
+      </div>
+    </center>
+  </body>
+</html>
