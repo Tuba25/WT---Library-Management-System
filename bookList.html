@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Library Management System</title>
-    <link rel="stylesheet" type="text/css" href="CSS/bookListStyle.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/searchBookStyle.css" />
   </head>
   <body background="Images/bup_logowala.jpg">
     <center>
@@ -19,7 +19,21 @@
       <div id="bottomLayout">
         <br />
         <center><h2 id="formHeading">Book List</h2></center>
+        <!-- /*search box */ -->
+        <div>
+          <input id="search" type="text" />
+          <button id="butt">Search</button>
+        </div>
+
+        <!-- list of books -->
+
+        <div class="left" id="Result">
+          <h1>Books</h1>
+          <ul id="books"></ul>
+        </div>
       </div>
     </center>
+
+    <script src="bookList.js"></script>
   </body>
 </html>

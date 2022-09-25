@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" type="text/css" href="CSS/stuLoginStyle.css" />
+  </head>
+  <body background="Images/BUP_Lake.jpg">
+    <center>
+      <br />
+      <div id="bottomLayout">
+        <div id="bottom-left">
+          <a href="adminLogin.html" id="linkAdmin"
+            ><img
+              src="Images/students.png"
+              height="200"
+              width="200"
+              id="imageL" /></a
+          ><br />
+          <p id="bottomContentLeft">Student Login</p>
+        </div>
+        <div id="bottom-right">
+          <form id="loginForm">
+            <table id="formLayout" cellspacing="10">
+              <tr id="rowLayout">
+                <td id="rowHeading">Username:</td>
+                <td><input type="text" name="username" id="username" /></td>
+              </tr>
+              <tr id="rowLayout">
+                <td id="rowHeading">Password:</td>
+                <td><input type="password" name="password" id="password" /></td>
+              </tr>
+            </table>
+            <br />
+            <center>
+              <input
+                type="submit"
+                onclick="js()"
+                value="Login"
+                id="buttonFont"
+              />
+            </center>
+            <br />
+          </form>
+        </div>
+      </div>
+    </center>
+
+    <script src="/JS/studLogin.js"></script>
+  </body>
+</html>
